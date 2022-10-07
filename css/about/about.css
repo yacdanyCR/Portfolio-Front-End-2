@@ -3,5 +3,27 @@
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    height: 400px;
+    height: 400px; 
+}
+
+.about__information{
+    margin-left: 13rem;
+    margin-right: 13rem; 
+}
+
+.about__title{
+    font-size: 50px;
+    font-family: var(--text-family);
+    color: var(--text-color); 
+    font-weight: 900;
+}
+
+.about__information >p{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left justify;
+    color: var(--text-color);
+    font-family: var(--text-family);
 }
