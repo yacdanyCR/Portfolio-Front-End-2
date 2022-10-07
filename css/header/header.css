@@ -1,0 +1,17 @@
+.header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 34.5px;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__link{
+    margin-left: 3rem;
+    color: var(--text-color);
+    font-size: 25px;
+    text-decoration: none;
+}
