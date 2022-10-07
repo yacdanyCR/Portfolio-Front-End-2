@@ -1,0 +1,75 @@
+.project__link{
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.project__buttons{
+    display: flex;
+}
+
+.project__buttons > button{
+    margin-left: 1rem;
+}
+
+
+.img__project{
+    width: 100%;
+} 
+
+.project__section .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 13rem;
+    margin-right: 13rem;  
+}
+
+.project__information:nth-child(2){
+    flex-direction: row-reverse;
+}
+.project__information:nth-child(4){
+    flex-direction: row-reverse;
+}
+
+.project__information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.project__title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--text-family);
+    color: var(--text-color); 
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Reposi_Button{
+    padding: 16px;
+    width: 116px;
+    height: 50px;
+    color: #2A7AE4;
+    font-size: 1rem;
+    border-color: #2A7AE4;
+    border-width: 2px;
+}
+
+.project__title{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.demo_button{
+    padding: 16px;
+    width: 116px;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    border-style: none;
+    border-width: 2px;
+    background-color: #2A7AE4;
+}
