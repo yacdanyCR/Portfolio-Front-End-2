@@ -1,8 +1,10 @@
 .header .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 34.5px;
+    margin-left: 13rem;
+    margin-right: 13rem;   
 }
 
 .nav__links{
