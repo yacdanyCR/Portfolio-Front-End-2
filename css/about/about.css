@@ -12,7 +12,7 @@
 }
 
 .about__title{
-    font-size: 50px;
+    font-size: 3rem;
     font-family: var(--text-family);
     color: var(--text-color); 
     font-weight: 900;
@@ -23,7 +23,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
-    text-align: left justify;
+    text-align: justify;
     color: var(--text-color);
     font-family: var(--text-family);
 }
