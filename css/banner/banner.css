@@ -8,14 +8,14 @@
 }
 
 .banner__title{
-    font-size: 70px;
+    font-size: 52px;
     font-family: var(--text-family);
     color: var(--text-color); 
     font-weight: 900;
 }
 
 .banner__text--information{
-    font-size:30px;
+    font-size:22px;
     padding: 24px 0;
     font-family: var(--text-family);
     color: var(--text-color);
@@ -26,7 +26,7 @@
 }
 .banner__social-links > li > a{
     margin-right: 2rem;
-    font-size: 30px;
+    font-size: 22px;
     text-decoration: none;
     color: var(--text-color);
 }
