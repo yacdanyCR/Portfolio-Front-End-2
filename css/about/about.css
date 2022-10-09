@@ -34,6 +34,14 @@
    }
 
    .about__information{
-    margin: 0%;
+    margin: 5px;
+   }
+
+   .about__title{
+    margin: 1rem;
+   }
+   .about__information >p{
+    width: auto;
+    margin: 1rem 1rem;
    }
   }
