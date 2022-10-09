@@ -35,3 +35,13 @@
     font-weight: 900;
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+        .form__section .container{
+            flex-direction: column-reverse;
+        }
+
+        .img__form{
+            margin-top: 2rem;
+        }
+    }

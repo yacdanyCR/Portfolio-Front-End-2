@@ -73,3 +73,25 @@
     border-width: 2px;
     background-color: #2A7AE4;
 }
+
+@media only screen and (max-width: 600px) {
+    .project__section .container{
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .project__information{
+        flex-direction: column;
+    }
+
+    .project__information:nth-child(2){
+        flex-direction: column;
+    }
+    .project__information:nth-child(4){
+        flex-direction: column;
+    }
+
+    .img__project{
+        width: 100%;
+    }
+   }
