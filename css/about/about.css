@@ -27,3 +27,13 @@
     color: var(--text-color);
     font-family: var(--text-family);
 }
+
+@media only screen and (max-width: 600px) {
+   .about__section .container{
+    flex-direction: column-reverse;
+   }
+
+   .about__information{
+    margin: 0%;
+   }
+  }
