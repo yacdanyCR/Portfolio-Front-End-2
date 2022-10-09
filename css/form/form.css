@@ -10,9 +10,11 @@
 }
 
 .form__contact{
+    margin-left: 2rem;
+}
+.form__contact form{
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
 }
 
 .form__contact  input, button{
