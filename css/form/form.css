@@ -1,0 +1,35 @@
+.form__section{
+    background-color: var(--background-color);
+    padding: 5rem;
+}
+
+.form__section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.form__contact  input, button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.form__contact input{
+    height: 2rem;
+}
+
+.form__title{
+    font-family: var(--text-family);
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
