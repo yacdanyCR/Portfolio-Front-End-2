@@ -9,19 +9,19 @@
     font-family: var(--text-family);
     color: var(--text-color);
     text-align: center;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 900;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .card{
-    width: 180px;
-    height: 180px;
+    width: 176px;
+    height: 174px;
     background-color: var(--backgroundCard-color);
-    margin: 20px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content:flex-end
+    align-items: flex-start;
+    justify-content:flex-end;
 }

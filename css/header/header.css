@@ -12,8 +12,8 @@
 }
 
 .nav__link{
-    margin-left: 3rem;
+    margin-left: 2rem;
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 16px;
     text-decoration: none;
 }
