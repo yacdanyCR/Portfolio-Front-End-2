@@ -17,11 +17,11 @@
     flex-direction: column;
 }
 
-.form__contact  input, button{
+.form__contact  input{
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 4px;
-    border: 0;
+    border-radius: 8px;
+   /*  border: 0; */
 }
 
 .form__contact input{
@@ -34,6 +34,17 @@
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 1rem;
+}
+
+.form__input{
+    border-color: red;
+}
+
+.form__submit--button{
+    padding: 10px;
+    background-color:#2A7AE4;
+    color: white;
+    border: 0;
 }
 
 @media only screen and (max-width: 600px) {

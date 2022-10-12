@@ -3,7 +3,10 @@ class Contactform {
     #phone
 
     validateName(value) {
-        return value.lenght < 5 ? true : false
+        /*   return value.lenght < 5 ? true : false */
+      /*   if (value.length < 5) {
+            alert("el nombre tiene menos de 5 caracteres")
+        } */
     }
 
     validatePhone(value) {
@@ -12,7 +15,7 @@ class Contactform {
     }
 
     validateData(name, phone, email) {
-        if (this.validateName(name) && this.validatePhone(phone) ) {
+        if (this.validateName(name) && this.validatePhone(phone)) {
             return true
         } else {
             return false
@@ -21,10 +24,23 @@ class Contactform {
 }
 
 const form1 = new Contactform();
-let $name = document.getElementById("name");
-let $phone = document.getElementById("phone");
-let $form = document.getElementById("form");
-$form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    form1.validateData($name.value, $phone.value) === true ? e.currentTarget.submit() : alert("Datos Incorrectod");
-})
+const $inputs = document.querySelectorAll("input");
+const validators = {
+    name: (input) => form1.validateName(input),
+    phone: (input) => form1.validatePhone(input)
+}
+
+const inputType = (input) => {
+    const dataType = input.dataset.type;
+    if (validators[dataType]) {
+        validators[dataType](input.value);
+    }
+
+    console.log(input.parentElement)
+}
+$inputs.forEach(element => {
+    element.addEventListener("blur", (e) => {
+        inputType(e.target);
+        console.log(validators)
+    })
+});
