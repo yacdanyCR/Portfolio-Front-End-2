@@ -3,15 +3,19 @@ class Contactform {
     #phone
 
     validateName(value) {
-        /*   return value.lenght < 5 ? true : false */
-      /*   if (value.length < 5) {
-            alert("el nombre tiene menos de 5 caracteres")
-        } */
+        return value.length < 5 ? true : false;
     }
 
     validatePhone(value) {
         let phoneno = /^\d{8}$/;
-        return value.match(phoneno) ? true : false;
+        if (value.length < 8) {
+            return true
+        }
+        else if (!value.match(phoneno)) {
+            return true
+        }
+
+        return false
     }
 
     validateData(name, phone, email) {
@@ -33,14 +37,21 @@ const validators = {
 const inputType = (input) => {
     const dataType = input.dataset.type;
     if (validators[dataType]) {
-        validators[dataType](input.value);
+        const bool = validators[dataType](input.value);
+        inputValidity(bool, input);
     }
+}
 
-    console.log(input.parentElement)
+const inputValidity = (bool, input) => {
+    if (bool) {
+        input.classList.add("form__input");
+        input.setCustomValidity("error")
+    } else {
+        input.classList.remove("form__input");
+    }
 }
 $inputs.forEach(element => {
     element.addEventListener("blur", (e) => {
         inputType(e.target);
-        console.log(validators)
     })
 });
