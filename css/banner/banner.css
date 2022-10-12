@@ -53,4 +53,8 @@
     .banner__information{
         margin: 1rem 1rem;
     }
+
+    .banner__social-links{
+        margin-top: 1rem;
+    }
   }

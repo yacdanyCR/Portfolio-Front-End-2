@@ -16,7 +16,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-   .hobie__section .container{
-    margin: 1rem;
-   }
+        .hobie__section .container{
+            margin: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
    }

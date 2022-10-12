@@ -3,16 +3,23 @@ class Contactform {
     #phone
 
     validateName(value) {
-        return value.lenght < 5 ? true : false
+        return value.length < 5 ? true : false;
     }
 
     validatePhone(value) {
         let phoneno = /^\d{8}$/;
-        return value.match(phoneno) ? true : false;
+        if (value.length < 8) {
+            return true
+        }
+        else if (!value.match(phoneno)) {
+            return true
+        }
+
+        return false
     }
 
     validateData(name, phone, email) {
-        if (this.validateName(name) && this.validatePhone(phone) ) {
+        if (this.validateName(name) && this.validatePhone(phone)) {
             return true
         } else {
             return false
@@ -21,10 +28,30 @@ class Contactform {
 }
 
 const form1 = new Contactform();
-let $name = document.getElementById("name");
-let $phone = document.getElementById("phone");
-let $form = document.getElementById("form");
-$form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    form1.validateData($name.value, $phone.value) === true ? e.currentTarget.submit() : alert("Datos Incorrectod");
-})
+const $inputs = document.querySelectorAll("input");
+const validators = {
+    name: (input) => form1.validateName(input),
+    phone: (input) => form1.validatePhone(input)
+}
+
+const inputType = (input) => {
+    const dataType = input.dataset.type;
+    if (validators[dataType]) {
+        const bool = validators[dataType](input.value);
+        inputValidity(bool, input);
+    }
+}
+
+const inputValidity = (bool, input) => {
+    if (bool) {
+        input.classList.add("form__input");
+        input.setCustomValidity("error")
+    } else {
+        input.classList.remove("form__input");
+    }
+}
+$inputs.forEach(element => {
+    element.addEventListener("blur", (e) => {
+        inputType(e.target);
+    })
+});
