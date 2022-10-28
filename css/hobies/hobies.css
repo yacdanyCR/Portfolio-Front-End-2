@@ -1,6 +1,7 @@
 .hobie__section .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: 5rem;
     margin-right: 5rem;   
 }
