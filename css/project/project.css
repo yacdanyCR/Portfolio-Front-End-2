@@ -9,6 +9,7 @@
 
 .project__buttons > button{
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 
@@ -55,12 +56,13 @@
     color: #2A7AE4;
     font-size: 1rem;
     border-color: #2A7AE4;
-    border-width: 2px;
+    border: none;
 }
 
 .project__title{
     font-size: 22px;
     font-weight: 900;
+    margin: 4rem 0;
 }
 
 .demo_button{

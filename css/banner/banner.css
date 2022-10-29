@@ -35,6 +35,7 @@
     .banner__section .container{
         flex-direction: column-reverse;
         margin: 0%;
+        padding: 1rem;
     }
 
     .banner__text--information{
