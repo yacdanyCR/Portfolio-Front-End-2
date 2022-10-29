@@ -35,6 +35,11 @@
 
    .about__information{
     margin: 5px;
+    padding: 1rem;
+   }
+
+   .about__information img{
+    padding: 1rem;
    }
 
    .about__title{
